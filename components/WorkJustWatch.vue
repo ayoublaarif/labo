@@ -21,26 +21,21 @@
     <ContentImage
       amount="1"
       data-node-id="187:1201"
-      image="/img/dixil_2m.webp"
+      image="/img/placeholder_img.png"
     />
 
     <!-- Observations -->
-    <div
-      class="work-justwatch__context-text"
-      data-name="Context Text"
-      data-node-id="187:1202"
-    >
       <ContextText
         :headline="true"
         headline-text="Observations:"
         body-text="The Title Page was suffering from a high bounce rate. The design hadn't been updated in 7 years, leading to accumulated design debt and user feedback."
-      />
-    </div>
+      />  
 
     <!-- Second Content Image -->
     <ContentImage
       amount="1"
       data-node-id="187:1203"
+      image="/img/jw_2.webp"
     />
 
     <!-- Research -->
@@ -119,61 +114,57 @@
     </div>
 
     <!-- Design -->
-    <div
-      class="work-justwatch__context-text"
-      data-name="Context Text"
-      data-node-id="187:1207"
-    >
+    
       <ContextText
         :headline="true"
         headline-text="Design:"
         body-text="I kicked off the design phase by exploring widely different iterations, Going horizontal rather than vertical, quantity over quality, to avoid the &quot;anchoring bias&quot; in the beginning. Then I started to be more analytical by filtering out the first iterations based on our research insights and technical feasibility (here I included our engineering team), and then I explored more into the selected verticals"
       />
-    </div>
+    
 
     <!-- Fourth Content Image -->
     <ContentImage
       amount="1"
       data-node-id="187:1208"
+      image="/img/jw_3.webp"
+    />
+    <ContentImage
+      amount="1"
+      data-node-id="187:1208"
+      image="/img/jw_4.webp"
     />
 
     <!-- Design continuation -->
-    <div
-      class="work-justwatch__context-text"
-      data-name="Context Text"
-      data-node-id="187:1209"
-    >
-      <ContextText
+   
+    <ContextText
         :headline="false"
-        body-text="Our approach followed an iterative feedback loop before we settled with this final design where we added relevant information to each offers including languages and prices, then sorted the list by the cheapest."
-      />
-    </div>
-
-    <!-- Custom height image 1 -->
-    <div
-      class="work-justwatch__custom-image"
-      data-name="Content Image"
-      data-node-id="187:1210"
+        body-text="Our approach followed an iterative feedback loop before we settled with this final design where we added relevant information to each offer including languages and prices, then sorted the list by the cheapest."
     />
 
+    <ContentImage
+      amount="1"
+      data-node-id="187:1208"
+      image="/img/jw_5.webp"
+    />
+
+    <!-- Custom height image 1 -->
+    
+
     <!-- Design continuation 2 -->
-    <div
-      class="work-justwatch__context-text"
-      data-name="Context Text"
-      data-node-id="187:1211"
-    >
-      <ContextText
+    
+    <ContextText
         :headline="false"
         body-text="We moved the episode list to the second position and defaulted to 'Newest' to match user intent. Then put a clear &quot;Watch now&quot; CTA on each offer so it's easier for users to start watching their title."
       />
-    </div>
+      
+    <ContentImage
+      amount="1"
+      data-node-id="187:1208"
+      image="/img/jw_6.webp"
+    />
 
     <!-- Custom height image 2 -->
-    <div
-      class="work-justwatch__custom-image"
-      data-name="Content Image"
-      data-node-id="187:1212"
-    />
+    
 
     <!-- Test -->
     <div

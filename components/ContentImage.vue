@@ -73,11 +73,12 @@ withDefaults(defineProps<Props>(), {
 .content-image {
   position: relative;
   width: 100%;
+  height: auto;
   flex-shrink: 0;
 }
 
 .content-image--single {
-  height: 464px;
+  height: auto;
   width: 100%;
   max-width: 824px;
   border-radius: var(--fox-border-radius-lg);
@@ -87,7 +88,7 @@ withDefaults(defineProps<Props>(), {
 .content-image--double {
   display: flex;
   gap: var(--fox-spacing-200);
-  height: 480px;
+  height: auto;
   align-items: flex-start;
   width: 100%;
   max-width: 824px;
@@ -97,7 +98,7 @@ withDefaults(defineProps<Props>(), {
   flex: 1 1 0;
   min-width: 0;
   min-height: 0;
-  height: 100%;
+  height: auto;
   border-radius: var(--fox-border-radius-lg);
   background-color: var(--fox-neutral-800);
   position: relative;
@@ -106,20 +107,16 @@ withDefaults(defineProps<Props>(), {
 
 .content-image__img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   object-position: 50% 50%;
   border-radius: var(--fox-border-radius-lg);
+  display: block;
 }
 
 .content-image--single {
   position: relative;
   overflow: hidden;
-}
-
-.content-image--single .content-image__img {
-  position: absolute;
-  inset: 0;
 }
 </style>
 

@@ -128,8 +128,8 @@ const handleOpenModal = (data: {
 const projects = [
   {
     imageName: 'placeholder_img.png',
-    headline: 'Project Title 1',
-    subheadline: 'Project Subtitle 1',
+    headline: 'JustWatch - Title Page Redesign',
+    subheadline: 'Case study',
     modalComponent: WorkJustWatch as Component,
     modalTitle: 'Project Title 1',
     modalInitialX: 20,
