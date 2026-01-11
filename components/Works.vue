@@ -26,13 +26,13 @@
     >
       <ProjectCard
         class="works__card"
-        :image-name="projects[1].imageName"
-        :headline="projects[1].headline"
-        :subheadline="projects[1].subheadline"
-        :modal-component="projects[1].modalComponent"
-        :modal-title="projects[1].modalTitle"
-        :modal-initial-x="projects[1].modalInitialX"
-        :modal-initial-y="projects[1].modalInitialY"
+        :image-name="projects[3].imageName"
+        :headline="projects[3].headline"
+        :subheadline="projects[3].subheadline"
+        :modal-component="projects[3].modalComponent"
+        :modal-title="projects[3].modalTitle"
+        :modal-initial-x="projects[3].modalInitialX"
+        :modal-initial-y="projects[3].modalInitialY"
         data-node-id="121:822"
         @open-modal="handleOpenModal"
       />
@@ -70,13 +70,13 @@
     >
       <ProjectCard
         class="works__card"
-        :image-name="projects[3].imageName"
-        :headline="projects[3].headline"
-        :subheadline="projects[3].subheadline"
-        :modal-component="projects[3].modalComponent"
-        :modal-title="projects[3].modalTitle"
-        :modal-initial-x="projects[3].modalInitialX"
-        :modal-initial-y="projects[3].modalInitialY"
+        :image-name="projects[1].imageName"
+        :headline="projects[1].headline"
+        :subheadline="projects[1].subheadline"
+        :modal-component="projects[1].modalComponent"
+        :modal-title="projects[1].modalTitle"
+        :modal-initial-x="projects[1].modalInitialX"
+        :modal-initial-y="projects[1].modalInitialY"
         data-node-id="121:842"
         @open-modal="handleOpenModal"
       />
@@ -101,7 +101,8 @@ import type { Component } from 'vue'
 import WorkJustWatch from './WorkJustWatch.vue'
 import WorkSifr from './WorkSifr.vue'
 import WorkDixil from './WorkDixil.vue'
-
+import WorkSaray from './WorkSaray.vue'
+import WorkCasablanca from './WorkCasablanca.vue'
 // Image asset from Figma localhost server
 const lineImage = 'http://localhost:3845/assets/411c0251516e4d899a5f90f26eec98d5bbf328af.svg'
 
@@ -127,7 +128,7 @@ const handleOpenModal = (data: {
 // Add modalComponent, modalTitle, modalInitialX, modalInitialY to specify which modal opens
 const projects = [
   {
-    imageName: 'placeholder_img.png',
+    imageName: 'justwatch_title.webp',
     headline: 'JustWatch - Title Page Redesign',
     subheadline: 'Case study',
     modalComponent: WorkJustWatch as Component,
@@ -136,37 +137,39 @@ const projects = [
     modalInitialY: 180,
   },
   {
-    imageName: 'sifr_1m.webp',
-    headline: 'Project Title 2',
-    subheadline: 'Project Subtitle 2',
-    modalComponent: WorkSifr as Component,
-    modalTitle: 'Sifr - Creative Driven House',
-    modalInitialX: 440,
-    modalInitialY: 440,
-    // No modal props = card won't open a modal when clicked
-  },
-  {
-    imageName: 'placeholder_img.png',
-    headline: 'Dixil - Digital Agency',
-    subheadline: 'Website Design',
-    // No modal props = card won't open a modal when clicked
-  },
-  {
-    imageName: 'placeholder_img.png',
-    headline: 'Dixil Hotels',
-    subheadline: 'Project Subtitle 4',
-    modalComponent: WorkDixil as Component,
-    modalTitle: 'Dixil Hotels',
-    modalInitialX: 440,
-    modalInitialY: 440,
-    // No modal props = card won't open a modal when clicked
-  },
-  {
-    imageName: 'placeholder_img.png',
+    imageName: 'sifr_t.gif',
     headline: 'Sifr - Creative Driven House',
-    subheadline: 'Website Design & Development',
+    subheadline: 'Showcase',
     modalComponent: WorkSifr as Component,
     modalTitle: 'Sifr - Creative Driven House',
+    modalInitialX: 20,
+    modalInitialY: 180,
+  },
+  {
+    imageName: 'dixil.webp',
+    headline: 'Dixil Hotels & Resorts',
+    subheadline: 'Showcasey',
+    modalComponent: WorkDixil as Component,
+    modalTitle: 'Dixil Hotels & Resorts',
+    modalInitialX: 20,
+    modalInitialY: 180,
+  },
+  {
+    imageName: 'saray_thumbnail.webp',
+    headline: 'Saray Casablanca - Website Design',
+    subheadline: 'Case study',
+    modalComponent: WorkSaray as Component,
+    modalTitle: 'Saray Casablanca',
+    modalInitialX: 440,
+    modalInitialY: 440,
+    // No modal props = card won't open a modal when clicked
+  },
+  {
+    imageName: 'casablanca.webp',
+    headline: 'Casablanca - Redesign',
+    subheadline: 'Case study',
+    modalComponent: WorkCasablanca as Component,
+    modalTitle: 'Casablanca - Redesign',
     // No initialX/initialY = will use default centered position
   },
 ]

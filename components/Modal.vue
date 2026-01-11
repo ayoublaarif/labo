@@ -107,7 +107,7 @@ const position = ref({
   x: props.initialX ?? 0, 
   y: props.initialY ?? 120 
 }) // Start at top: 120px, centered (or use initialX/initialY if provided)
-const size = ref({ width: 920, height: 600 })
+const size = ref({ width: 800, height: 600 })
 
 // Get initial z-index from global tracker
 // This ensures new modals always get a z-index higher than any existing element

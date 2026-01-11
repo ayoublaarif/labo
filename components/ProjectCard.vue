@@ -84,37 +84,21 @@ const handleClick = () => {
   }
 }
 
-// Placeholder image as fallback
-import placeholderImage from '~/assets/img/placeholder_img.png'
-
-// Image mapping - add your images here by importing them statically
-// Example:
-// import projectImage1 from '~/assets/img/project1.jpg'
-// import projectImage2 from '~/assets/img/project2.jpg'
-// Then add them to the imageMap below
-const imageMap: Record<string, string> = {
-  'placeholder_img.png': placeholderImage,
-  // Add your images here:
-  // 'project1.jpg': projectImage1,
-  // 'project2.jpg': projectImage2,
-}
-
-// Get image source from assets/img folder
+// Get image source from public/img folder
+// Images should be placed in public/img/ and referenced by name (e.g., "image.webp")
 const imageSrc = computed(() => {
   if (!props.imageName) {
-    return placeholderImage
+    return '/img/placeholder_img.png'
   }
   
-  // Check if image exists in the map
-  if (imageMap[props.imageName]) {
-    return imageMap[props.imageName]
+  // Construct path to public/img folder
+  // If imageName already starts with /, use it as-is (absolute path)
+  // Otherwise, assume it's in /img/ folder
+  if (props.imageName.startsWith('/')) {
+    return props.imageName
   }
   
-  // Fallback to placeholder if image not found in map
-  // To add new images:
-  // 1. Import them at the top: import myImage from '~/assets/img/myImage.jpg'
-  // 2. Add to imageMap: 'myImage.jpg': myImage
-  return placeholderImage
+  return `/img/${props.imageName}`
 })
 </script>
 
