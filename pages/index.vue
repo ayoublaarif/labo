@@ -34,8 +34,17 @@
       :component="modal.component"
       :initial-x="modal.initialX"
       :initial-y="modal.initialY"
+      :initial-width="modal.initialWidth"
+      :initial-height="modal.initialHeight"
       @open-modal="handleOpenModal"
       @close="handleCloseModal(index)"
+    />
+
+    <!-- File component -->
+    <File
+      class="index-page__file"
+      :icon-component="Renard"
+      @open-modal="handleFileClick"
     />
      
   </div>
@@ -46,6 +55,9 @@ import type { Component } from 'vue'
 import { ref, onMounted } from 'vue'
 import Modal from '~/components/Modal.vue'
 import Works from '~/components/Works.vue'
+import File from '~/components/File.vue'
+import Renard from '~/components/Renard.vue'
+import AboutMe from '~/components/AboutMe.vue'
 import bgDali from '~/assets/img/bg_dali.jpg'
 import { scanHighestZIndex } from '~/utils/zIndexTracker'
 
@@ -64,6 +76,8 @@ interface ModalData {
   title: string
   initialX?: number
   initialY?: number
+  initialWidth?: number
+  initialHeight?: number
 }
 
 const openModals = ref<ModalData[]>([])
@@ -76,6 +90,18 @@ const handleOpenModal = (data: ModalData) => {
 const handleCloseModal = (index: number) => {
   // Remove the modal at the specified index
   openModals.value.splice(index, 1)
+}
+
+const handleFileClick = () => {
+  // Open AboutMe modal when File is clicked
+  handleOpenModal({
+    component: AboutMe as Component,
+    title: 'About me',
+    initialX: undefined,
+    initialY: undefined,
+    initialWidth: 720,
+    initialHeight: 376,
+  })
 }
 </script>
 

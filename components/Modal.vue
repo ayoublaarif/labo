@@ -71,6 +71,8 @@ interface Props {
   component?: Component
   initialX?: number
   initialY?: number
+  initialWidth?: number
+  initialHeight?: number
 }
 
 const props = withDefaults(defineProps<Props>(), {
@@ -79,6 +81,8 @@ const props = withDefaults(defineProps<Props>(), {
   component: Placeholder,
   initialX: undefined,
   initialY: undefined,
+  initialWidth: undefined,
+  initialHeight: undefined,
 })
 
 const emit = defineEmits<{
@@ -87,6 +91,8 @@ const emit = defineEmits<{
     title: string
     initialX?: number
     initialY?: number
+    initialWidth?: number
+    initialHeight?: number
   }]
   'close': []
 }>()
@@ -107,7 +113,10 @@ const position = ref({
   x: props.initialX ?? 0, 
   y: props.initialY ?? 120 
 }) // Start at top: 120px, centered (or use initialX/initialY if provided)
-const size = ref({ width: 800, height: 600 })
+const size = ref({ 
+  width: props.initialWidth ?? 800, 
+  height: props.initialHeight ?? 600 
+})
 
 // Get initial z-index from global tracker
 // This ensures new modals always get a z-index higher than any existing element

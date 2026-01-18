@@ -119,6 +119,16 @@
               />
             </div>
           </div>
+
+          <!-- About Me -->
+          <div v-if="activeComponent === 'about-me'" class="test-page__component-wrapper test-page__component-wrapper--full-width">
+            <h2 class="test-page__section-title">About Me</h2>
+            <div class="test-page__component-display">
+              <div style="background-color: var(--fox-background-base); padding: var(--fox-spacing-400);">
+                <AboutMe />
+              </div>
+            </div>
+          </div>
         </div>
       </main>
     </div>
@@ -139,6 +149,7 @@ const components = [
   { id: 'work-justwatch', name: 'Work JustWatch Frame' },
   { id: 'work-dixil', name: 'Work Dixil Frame' },
   { id: 'project-card', name: 'Project Card' },
+  { id: 'about-me', name: 'About Me' },
 ]
 
 const activeComponent = ref(components[0].id)

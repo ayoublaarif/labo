@@ -1,7 +1,7 @@
 <template>
   <div
     class="project-card"
-    :class="{ 'project-card--clickable': modalComponent && modalTitle }"
+    :class="{ 'project-card--clickable': (modalComponent && modalTitle) || externalLink }"
     data-name="Project Card"
     :data-node-id="nodeId"
     @click="handleClick"
@@ -51,6 +51,7 @@ interface Props {
   modalTitle?: string
   modalInitialX?: number
   modalInitialY?: number
+  externalLink?: string
 }
 
 const props = withDefaults(defineProps<Props>(), {
@@ -62,6 +63,7 @@ const props = withDefaults(defineProps<Props>(), {
   modalTitle: undefined,
   modalInitialX: undefined,
   modalInitialY: undefined,
+  externalLink: undefined,
 })
 
 const emit = defineEmits<{
@@ -74,6 +76,13 @@ const emit = defineEmits<{
 }>()
 
 const handleClick = () => {
+  // If external link is provided, open it in a new tab
+  if (props.externalLink) {
+    window.open(props.externalLink, '_blank', 'noopener,noreferrer')
+    return
+  }
+  
+  // Otherwise, open modal if modal props are provided
   if (props.modalComponent && props.modalTitle) {
     emit('open-modal', {
       component: props.modalComponent,

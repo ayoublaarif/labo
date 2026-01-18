@@ -12,14 +12,18 @@ type HydrationStrategies = {
 }
 type LazyComponent<T> = (T & DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }>)
 interface _GlobalComponents {
-      'CloseIcon': typeof import("../components/CloseIcon.vue")['default']
+      'AboutMe': typeof import("../components/AboutMe.vue")['default']
+    'CloseIcon': typeof import("../components/CloseIcon.vue")['default']
     'ContentImage': typeof import("../components/ContentImage.vue")['default']
     'ContextText': typeof import("../components/ContextText.vue")['default']
+    'File': typeof import("../components/File.vue")['default']
+    'FileIcon': typeof import("../components/FileIcon.vue")['default']
     'Modal': typeof import("../components/Modal.vue")['default']
     'ModalBody': typeof import("../components/ModalBody.vue")['default']
     'ModalHeader': typeof import("../components/ModalHeader.vue")['default']
     'Placeholder': typeof import("../components/Placeholder.vue")['default']
     'ProjectCard': typeof import("../components/ProjectCard.vue")['default']
+    'Renard': typeof import("../components/Renard.vue")['default']
     'WorkCasablanca': typeof import("../components/WorkCasablanca.vue")['default']
     'WorkDixil': typeof import("../components/WorkDixil.vue")['default']
     'WorkJustWatch': typeof import("../components/WorkJustWatch.vue")['default']
@@ -50,14 +54,18 @@ interface _GlobalComponents {
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
     'NuxtIsland': typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
     'NuxtRouteAnnouncer': typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']
-      'LazyCloseIcon': LazyComponent<typeof import("../components/CloseIcon.vue")['default']>
+      'LazyAboutMe': LazyComponent<typeof import("../components/AboutMe.vue")['default']>
+    'LazyCloseIcon': LazyComponent<typeof import("../components/CloseIcon.vue")['default']>
     'LazyContentImage': LazyComponent<typeof import("../components/ContentImage.vue")['default']>
     'LazyContextText': LazyComponent<typeof import("../components/ContextText.vue")['default']>
+    'LazyFile': LazyComponent<typeof import("../components/File.vue")['default']>
+    'LazyFileIcon': LazyComponent<typeof import("../components/FileIcon.vue")['default']>
     'LazyModal': LazyComponent<typeof import("../components/Modal.vue")['default']>
     'LazyModalBody': LazyComponent<typeof import("../components/ModalBody.vue")['default']>
     'LazyModalHeader': LazyComponent<typeof import("../components/ModalHeader.vue")['default']>
     'LazyPlaceholder': LazyComponent<typeof import("../components/Placeholder.vue")['default']>
     'LazyProjectCard': LazyComponent<typeof import("../components/ProjectCard.vue")['default']>
+    'LazyRenard': LazyComponent<typeof import("../components/Renard.vue")['default']>
     'LazyWorkCasablanca': LazyComponent<typeof import("../components/WorkCasablanca.vue")['default']>
     'LazyWorkDixil': LazyComponent<typeof import("../components/WorkDixil.vue")['default']>
     'LazyWorkJustWatch': LazyComponent<typeof import("../components/WorkJustWatch.vue")['default']>
@@ -94,14 +102,18 @@ declare module 'vue' {
   export interface GlobalComponents extends _GlobalComponents { }
 }
 
+export const AboutMe: typeof import("../components/AboutMe.vue")['default']
 export const CloseIcon: typeof import("../components/CloseIcon.vue")['default']
 export const ContentImage: typeof import("../components/ContentImage.vue")['default']
 export const ContextText: typeof import("../components/ContextText.vue")['default']
+export const File: typeof import("../components/File.vue")['default']
+export const FileIcon: typeof import("../components/FileIcon.vue")['default']
 export const Modal: typeof import("../components/Modal.vue")['default']
 export const ModalBody: typeof import("../components/ModalBody.vue")['default']
 export const ModalHeader: typeof import("../components/ModalHeader.vue")['default']
 export const Placeholder: typeof import("../components/Placeholder.vue")['default']
 export const ProjectCard: typeof import("../components/ProjectCard.vue")['default']
+export const Renard: typeof import("../components/Renard.vue")['default']
 export const WorkCasablanca: typeof import("../components/WorkCasablanca.vue")['default']
 export const WorkDixil: typeof import("../components/WorkDixil.vue")['default']
 export const WorkJustWatch: typeof import("../components/WorkJustWatch.vue")['default']
@@ -132,14 +144,18 @@ export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
 export const NuxtRouteAnnouncer: typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']
+export const LazyAboutMe: LazyComponent<typeof import("../components/AboutMe.vue")['default']>
 export const LazyCloseIcon: LazyComponent<typeof import("../components/CloseIcon.vue")['default']>
 export const LazyContentImage: LazyComponent<typeof import("../components/ContentImage.vue")['default']>
 export const LazyContextText: LazyComponent<typeof import("../components/ContextText.vue")['default']>
+export const LazyFile: LazyComponent<typeof import("../components/File.vue")['default']>
+export const LazyFileIcon: LazyComponent<typeof import("../components/FileIcon.vue")['default']>
 export const LazyModal: LazyComponent<typeof import("../components/Modal.vue")['default']>
 export const LazyModalBody: LazyComponent<typeof import("../components/ModalBody.vue")['default']>
 export const LazyModalHeader: LazyComponent<typeof import("../components/ModalHeader.vue")['default']>
 export const LazyPlaceholder: LazyComponent<typeof import("../components/Placeholder.vue")['default']>
 export const LazyProjectCard: LazyComponent<typeof import("../components/ProjectCard.vue")['default']>
+export const LazyRenard: LazyComponent<typeof import("../components/Renard.vue")['default']>
 export const LazyWorkCasablanca: LazyComponent<typeof import("../components/WorkCasablanca.vue")['default']>
 export const LazyWorkDixil: LazyComponent<typeof import("../components/WorkDixil.vue")['default']>
 export const LazyWorkJustWatch: LazyComponent<typeof import("../components/WorkJustWatch.vue")['default']>

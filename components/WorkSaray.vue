@@ -105,7 +105,7 @@
       :headline="true"
       headline-text="Conclude:"
     >
-      <p>The results provided strong quantitative validation for our hypothesis:</p>
+      <p>The results provided strong quantitative validation for my design:</p>
       <ul>
         <li>We achieved a 4.8/5 score on the Semantic Differential Scale</li>
         <li>The website generated 4% more qualified leads than the set target</li>

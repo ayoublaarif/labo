@@ -50,7 +50,7 @@
       />
     </div>
 
-    <!-- Decorative line separator -->
+    <!-- Decorative line separator
     <div class="works__separator">
       <div class="works__separator-inner">
         <img
@@ -60,7 +60,7 @@
           data-node-id="121:834"
         >
       </div>
-    </div>
+    </div> -->
 
     <!-- Another row with 2 ProjectCards -->
     <div
@@ -93,6 +93,39 @@
         @open-modal="handleOpenModal"
       />
     </div>
+
+    <div
+      class="works__row"
+      data-name="Container"
+      data-node-id="121:841"
+    >
+      <ProjectCard
+        class="works__card"
+        :image-name="projects[5].imageName"
+        :headline="projects[5].headline"
+        :subheadline="projects[5].subheadline"
+        :modal-title="projects[5].modalTitle"
+        :modal-initial-x="projects[5].modalInitialX"
+        :modal-initial-y="projects[5].modalInitialY"
+        :external-link="projects[5].externalLink"
+        data-node-id="121:842"
+        @open-modal="handleOpenModal"
+      />
+      <ProjectCard
+        class="Sifr works__card"
+        :image-name="projects[6].imageName"
+        :headline="projects[6].headline"
+        :subheadline="projects[6].subheadline"
+        :modal-title="projects[6].modalTitle"
+        :modal-initial-x="projects[6].modalInitialX"
+        :modal-initial-y="projects[6].modalInitialY"
+        :external-link="projects[6].externalLink"
+        data-node-id="121:843"
+        @open-modal="handleOpenModal"
+      />
+    </div>
+
+
   </div>
 </template>
 
@@ -170,6 +203,22 @@ const projects = [
     subheadline: 'Case study',
     modalComponent: WorkCasablanca as Component,
     modalTitle: 'Casablanca - Redesign',
+    // No initialX/initialY = will use default centered position
+  },
+  {
+    imageName: 'placeholder_img.png',
+    headline: 'Quuevo - Redesign',
+    subheadline: 'Case study',
+    modalTitle: 'Quuevo ',
+    externalLink: 'https://www.behance.net/gallery/117729295/Quuevo-Saas-Application',
+    // No initialX/initialY = will use default centered position
+  },
+  {
+    imageName: 'placeholder_img.png',
+    headline: 'Canada Roller Team - Redesign',
+    subheadline: 'Showcase',
+    modalTitle: 'Canada Roller Team',
+    externalLink: 'https://www.behance.net/gallery/107549989/Canda-Roller-Derby-Website-Redesign'
     // No initialX/initialY = will use default centered position
   },
 ]
