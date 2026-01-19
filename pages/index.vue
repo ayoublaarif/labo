@@ -44,6 +44,8 @@
     <File
       class="index-page__file"
       :icon-component="Renard"
+      :initial-x="1232"
+      :initial-y="572"
       @open-modal="handleFileClick"
     />
      
@@ -62,6 +64,12 @@ import bgDali from '~/assets/img/bg_dali.jpg'
 import { scanHighestZIndex } from '~/utils/zIndexTracker'
 
 const backgroundImage = bgDali
+
+// File component position
+const filePosition = ref({
+  x: 1056,
+  y: 572,
+})
 
 // Initialize z-index tracker on page load
 onMounted(() => {
@@ -97,8 +105,8 @@ const handleFileClick = () => {
   handleOpenModal({
     component: AboutMe as Component,
     title: 'About me',
-    initialX: undefined,
-    initialY: undefined,
+    initialX: 1000,
+    initialY: 64,
     initialWidth: 720,
     initialHeight: 376,
   })

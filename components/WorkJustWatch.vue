@@ -21,7 +21,13 @@
     <ContentImage
       amount="1"
       data-node-id="187:1201"
-      image="/img/placeholder_img.png"
+      image="/img/justwatch_title.webp"
+    />
+
+    <WorkMetaInfo 
+      role="Product Designer"
+      timeline="2024"
+      team="Me, PM, SEO Lead, BI Developer, and 2 Engineers"
     />
 
     <!-- Observations -->

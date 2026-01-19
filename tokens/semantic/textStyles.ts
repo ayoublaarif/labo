@@ -60,6 +60,14 @@ export const textStyleDefinitions = {
     letterSpacing: '0',
     fontWeightValue: '400',
   },
+  '--fox-body-medium-regular': {
+    fontFamily: 'var(--fox-font-family-main)',
+    fontWeight: 'var(--fox-font-weight-100)',
+    fontSize: 'var(--fox-font-size-100)', // 14px
+    lineHeight: 'var(--fox-line-height-200)',
+    letterSpacing: '0',
+    fontWeightValue: '400',
+  },
 } as const;
 
 export type TextStyleName = keyof typeof textStyleDefinitions;

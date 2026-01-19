@@ -129,6 +129,16 @@
               </div>
             </div>
           </div>
+
+          <!-- Work Meta Info -->
+          <div v-if="activeComponent === 'work-meta-info'" class="test-page__component-wrapper test-page__component-wrapper--full-width">
+            <h2 class="test-page__section-title">Work Meta Info</h2>
+            <div class="test-page__component-display">
+              <div style="background-color: var(--fox-background-base); padding: var(--fox-spacing-400);">
+                <WorkMetaInfo />
+              </div>
+            </div>
+          </div>
         </div>
       </main>
     </div>
@@ -150,6 +160,7 @@ const components = [
   { id: 'work-dixil', name: 'Work Dixil Frame' },
   { id: 'project-card', name: 'Project Card' },
   { id: 'about-me', name: 'About Me' },
+  { id: 'work-meta-info', name: 'Work Meta Info' },
 ]
 
 const activeComponent = ref(components[0].id)

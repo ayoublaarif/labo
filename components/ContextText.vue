@@ -45,7 +45,7 @@ withDefaults(defineProps<Props>(), {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: var(--fox-spacing-200); /* 16px gap */
+  gap: var(--fox-spacing-300); /* 16px gap */
   position: relative;
   width: 100%;
   color: var(--fox-text-highlight); /* white text */

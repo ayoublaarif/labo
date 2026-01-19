@@ -107,7 +107,7 @@
         :modal-title="projects[5].modalTitle"
         :modal-initial-x="projects[5].modalInitialX"
         :modal-initial-y="projects[5].modalInitialY"
-        :external-link="projects[5].externalLink"
+        :modal-component="projects[5].modalComponent"
         data-node-id="121:842"
         @open-modal="handleOpenModal"
       />
@@ -125,7 +125,36 @@
       />
     </div>
 
-
+    <div
+      class="works__row"
+      data-name="Container"
+      data-node-id="121:841"
+    >
+      <ProjectCard
+        class="works__card"
+        :image-name="projects[7].imageName"
+        :headline="projects[7].headline"
+        :subheadline="projects[7].subheadline"
+        :modal-title="projects[7].modalTitle"
+        :modal-initial-x="projects[7].modalInitialX"
+        :modal-initial-y="projects[7].modalInitialY"
+        :external-link="projects[7].externalLink"
+        data-node-id="121:842"
+        @open-modal="handleOpenModal"
+      />
+      <ProjectCard
+        class="Sifr works__card"
+        :image-name="projects[8].imageName"
+        :headline="projects[8].headline"
+        :subheadline="projects[8].subheadline"
+        :modal-title="projects[8].modalTitle"
+        :modal-initial-x="projects[8].modalInitialX"
+        :modal-initial-y="projects[8].modalInitialY"
+        :external-link="projects[8].externalLink"
+        data-node-id="121:843"
+        @open-modal="handleOpenModal"
+      />
+    </div>
   </div>
 </template>
 
@@ -136,7 +165,8 @@ import WorkSifr from './WorkSifr.vue'
 import WorkDixil from './WorkDixil.vue'
 import WorkSaray from './WorkSaray.vue'
 import WorkCasablanca from './WorkCasablanca.vue'
-// Image asset from Figma localhost server
+import WorkTooBigToHandle from './WorkTooBigToHandle.vue'
+    // Image asset from Figma localhost server
 const lineImage = 'http://localhost:3845/assets/411c0251516e4d899a5f90f26eec98d5bbf328af.svg'
 
 const emit = defineEmits<{
@@ -163,64 +193,86 @@ const projects = [
   {
     imageName: 'justwatch_title.webp',
     headline: 'JustWatch - Title Page Redesign',
-    subheadline: 'Case study',
+    subheadline: 'Case study - 2024',
     modalComponent: WorkJustWatch as Component,
-    modalTitle: 'Project Title 1',
-    modalInitialX: 20,
-    modalInitialY: 180,
+    modalTitle: 'JustWatch',
+    modalInitialX: 480,
+    modalInitialY: 20,
   },
   {
     imageName: 'sifr_t.gif',
     headline: 'Sifr - Creative Driven House',
-    subheadline: 'Showcase',
+    subheadline: 'Showcase - 2021',
     modalComponent: WorkSifr as Component,
     modalTitle: 'Sifr - Creative Driven House',
-    modalInitialX: 20,
-    modalInitialY: 180,
+    modalInitialX: 480,
+    modalInitialY: 20,
   },
   {
     imageName: 'dixil.webp',
     headline: 'Dixil Hotels & Resorts',
-    subheadline: 'Showcasey',
+    subheadline: 'Showcase - 2022',
     modalComponent: WorkDixil as Component,
     modalTitle: 'Dixil Hotels & Resorts',
-    modalInitialX: 20,
-    modalInitialY: 180,
+    modalInitialX: 480,
+    modalInitialY: 20,
   },
   {
     imageName: 'saray_thumbnail.webp',
     headline: 'Saray Casablanca - Website Design',
-    subheadline: 'Case study',
+    subheadline: 'Case study - 2022',
     modalComponent: WorkSaray as Component,
     modalTitle: 'Saray Casablanca',
     modalInitialX: 440,
-    modalInitialY: 440,
+    modalInitialY: 20,
     // No modal props = card won't open a modal when clicked
   },
   {
     imageName: 'casablanca.webp',
-    headline: 'Casablanca - Redesign',
-    subheadline: 'Case study',
+    headline: 'Visit Casablanca - Website Redesign',
+    subheadline: 'Showcase - 2021',
     modalComponent: WorkCasablanca as Component,
-    modalTitle: 'Casablanca - Redesign',
+    modalTitle: 'Visit Casablanca',
+    modalInitialX: 480,
+    modalInitialY: 20,
     // No initialX/initialY = will use default centered position
   },
   {
-    imageName: 'placeholder_img.png',
-    headline: 'Quuevo - Redesign',
-    subheadline: 'Case study',
-    modalTitle: 'Quuevo ',
+    imageName: 'tbth_1.webp',
+    headline: 'Too Big To Handle - Visual Identity',
+    subheadline: 'Showcase - 2024',
+    modalComponent: WorkTooBigToHandle as Component,
+    modalTitle: 'Too Big To Handle',
+    modalInitialX: 480,
+    modalInitialY: 20,
+    // No initialX/initialY = will use default centered position
+  },
+  {
+    imageName: 'follow_your_football_club.webp',
+    headline: 'Follow Your Football Club - Mobile App',
+    subheadline: 'Case study - 2020',
+    modalTitle: 'Follow Your Football Club',
+    externalLink: 'https://www.behance.net/gallery/98382065/Follow-your-football-club-mobile-app'
+    // No initialX/initialY = will use default centered position
+  },
+  {
+    imageName: 'quuevo_3.webp',
+    headline: 'Quuevo AI - Concept Design',
+    subheadline: 'Case study - 2021',
     externalLink: 'https://www.behance.net/gallery/117729295/Quuevo-Saas-Application',
+    modalTitle: 'Quuevo AI',
     // No initialX/initialY = will use default centered position
   },
   {
-    imageName: 'placeholder_img.png',
+    imageName: 'canada_1.webp',
     headline: 'Canada Roller Team - Redesign',
-    subheadline: 'Showcase',
+    subheadline: 'Showcase - 2020',
     modalTitle: 'Canada Roller Team',
     externalLink: 'https://www.behance.net/gallery/107549989/Canda-Roller-Derby-Website-Redesign'
     // No initialX/initialY = will use default centered position
   },
+  
+  
 ]
 </script>
 

@@ -1,60 +1,57 @@
 <template>
   <div
-    class="work-sifr"
+    class="work-too-big-to-handle"
     :data-node-id="nodeId"
-    data-name="Work Sifr"
+    data-name="Work Too Big To Handle"
   >
     <!-- JustWatch's Title Page -->
     
     <ContextText
         :headline="true"
-        headline-text="Sifr - Creative Driven House"
-        body-text="Sifr is a group of passionate young Saudis who are aiming to be one of the leaders in creative content creation (CCC) in the middle east."
+        headline-text="Too Big To Handle"
+        body-text="Too Big To Handle is a software company that helps businesses manage their projects and tasks."
      />
 
     <!-- First Content Image -->
     <ContentImage
       amount="1"
-      image="/img/sifr_1m.webp"
-    />
-
-    <WorkMetaInfo 
-      role="Product Designer and Front End Developer"
-      timeline="2021"
-      team="Me and Front End Developer"
-    />
-
-    <ContentImage
-      amount="1"
-      image="/img/sifr_2m.webp"
+      image="/img/tbth_1.webp"
     />
     <ContentImage
       amount="1"
-      image="/img/sifr_3m.webp"
+      image="/img/tbth_2.webp"
     />
     <ContentImage
       amount="1"
-      image="/img/sifr_4m.webp"
+      image="/img/tbth_3.webp"
     />
     <ContentImage
       amount="1"
-      image="/img/sifr_5m.webp"
+      image="/img/tbth_4.webp"
     />
     <ContentImage
       amount="1"
-      image="/img/sifr_6m.webp"
+      image="/img/tbth_6.webp"
     />
     <ContentImage
       amount="1"
-      image="/img/sifr_7m.webp"
+      image="/img/tbth_7.webp"
     />
     <ContentImage
       amount="1"
-      image="/img/sifr_77m.gif"
+      image="/img/tbth_8.webp"
     />
     <ContentImage
       amount="1"
-      image="/img/sifr_8m.webp"
+      image="/img/tbth_9.webp"
+    />  
+    <ContentImage
+      amount="1"
+      image="/img/tbth_10.webp"
+    />
+    <ContentImage
+      amount="1"
+      image="/img/tbth_11.webp"
     />
 
     
@@ -73,7 +70,7 @@ withDefaults(defineProps<Props>(), {
 </script>
 
 <style scoped>
-.work-sifr {
+.work-too-big-to-handle {
   display: flex;
   flex-direction: column;
   gap: var(--fox-spacing-600); /* 48px gap */
