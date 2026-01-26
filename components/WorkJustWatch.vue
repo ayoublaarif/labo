@@ -124,7 +124,7 @@
       <ContextText
         :headline="true"
         headline-text="Design:"
-        body-text="I kicked off the design phase by exploring widely different iterations, Going horizontal rather than vertical, quantity over quality, to avoid the &quot;anchoring bias&quot; in the beginning. Then I started to be more analytical by filtering out the first iterations based on our research insights and technical feasibility (here I included our engineering team), and then I explored more into the selected verticals"
+        body-text="I kicked off the design phase by exploring widely different iterations, Going horizontal rather than vertical, quantity over quality, to avoid the anchoring bias in the beginning. Then I started to be more analytical by filtering out the first iterations based on our research insights and technical feasibility (here I included our engineering team), and then I explored more into the selected verticals"
       />
     
 
