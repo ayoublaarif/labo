@@ -201,10 +201,10 @@ const projects = [
   },
   {
     imageName: 'sifr_t.gif',
-    headline: 'Sifr - Creative Driven House',
+    headline: 'Sifr - Website Design & Development',
     subheadline: 'Showcase - 2021',
     modalComponent: WorkSifr as Component,
-    modalTitle: 'Sifr - Creative Driven House',
+    modalTitle: 'Sifr - Website Design & Development',
     modalInitialX: 480,
     modalInitialY: 20,
   },

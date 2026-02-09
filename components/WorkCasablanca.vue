@@ -8,8 +8,8 @@
     
     <ContextText
         :headline="true"
-        headline-text="Casablanca"
-        body-text="Casablanca is a city in Morocco. It is known for its beautiful architecture and its vibrant culture."
+        headline-text="Visit Casablanca"
+        body-text="Casablanca the economic capital of Maroc is surrounded by historical monuments, plages and a vibrant urban environment."
      />
 
     <!-- First Content Image -->

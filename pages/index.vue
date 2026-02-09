@@ -44,8 +44,8 @@
     <File
       class="index-page__file"
       :icon-component="Renard"
-      :initial-x="1232"
-      :initial-y="572"
+      :initial-x-percent="88"
+      :initial-y-percent="72"
       @open-modal="handleFileClick"
     />
      
@@ -64,12 +64,6 @@ import bgDali from '~/assets/img/bg_dali.jpg'
 import { scanHighestZIndex } from '~/utils/zIndexTracker'
 
 const backgroundImage = bgDali
-
-// File component position
-const filePosition = ref({
-  x: 1056,
-  y: 572,
-})
 
 // Initialize z-index tracker on page load
 onMounted(() => {

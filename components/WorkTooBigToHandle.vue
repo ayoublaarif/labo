@@ -9,7 +9,7 @@
     <ContextText
         :headline="true"
         headline-text="Too Big To Handle"
-        body-text="Too Big To Handle is a software company that helps businesses manage their projects and tasks."
+        body-text="Too Big To Handle is a retail store dedicated to individuals with big feet, their mission is to redefine fashion accessibility."
      />
 
     <!-- First Content Image -->

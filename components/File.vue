@@ -32,6 +32,8 @@ interface Props {
   iconComponent?: Component
   initialX?: number
   initialY?: number
+  initialXPercent?: number
+  initialYPercent?: number
 }
 
 const props = withDefaults(defineProps<Props>(), {
@@ -41,6 +43,8 @@ const props = withDefaults(defineProps<Props>(), {
   iconComponent: FileIcon,
   initialX: undefined,
   initialY: undefined,
+  initialXPercent: undefined,
+  initialYPercent: undefined,
 })
 
 const emit = defineEmits<{
@@ -52,16 +56,64 @@ const isDragging = ref(false)
 const dragStart = ref({ x: 0, y: 0 })
 const dragStartPosition = ref({ x: 0, y: 0 })
 
-// Initialize position with props or defaults
-const position = ref({
-  x: props.initialX ?? 1056,
-  y: props.initialY ?? 572,
-})
+// Calculate position from percentage or use pixel value
+const calculatePosition = () => {
+  if (typeof window === 'undefined') {
+    return { x: 0, y: 0 }
+  }
+  
+  const viewportWidth = window.innerWidth
+  const viewportHeight = window.innerHeight
+  
+  let x: number
+  let y: number
+  
+  if (props.initialXPercent !== undefined) {
+    // Percentage-based positioning (0-100)
+    x = (viewportWidth * props.initialXPercent) / 100
+  } else if (props.initialX !== undefined) {
+    // Pixel-based positioning
+    x = props.initialX
+  } else {
+    // Default fallback
+    x = (viewportWidth * 80) / 100 // 80% from left
+  }
+  
+  if (props.initialYPercent !== undefined) {
+    // Percentage-based positioning (0-100)
+    y = (viewportHeight * props.initialYPercent) / 100
+  } else if (props.initialY !== undefined) {
+    // Pixel-based positioning
+    y = props.initialY
+  } else {
+    // Default fallback
+    y = 572
+  }
+  
+  return { x, y }
+}
+
+// Initialize position
+const position = ref(calculatePosition())
 
 const fileStyle = computed(() => ({
   left: `${position.value.x}px`,
   top: `${position.value.y}px`,
 }))
+
+// Handle window resize to recalculate percentage-based positions
+const handleResize = () => {
+  if (!isDragging.value && (props.initialXPercent !== undefined || props.initialYPercent !== undefined)) {
+    const newPos = calculatePosition()
+    // Only update if we're using percentage-based positioning
+    if (props.initialXPercent !== undefined) {
+      position.value.x = newPos.x
+    }
+    if (props.initialYPercent !== undefined) {
+      position.value.y = newPos.y
+    }
+  }
+}
 
 const startDrag = (e: MouseEvent) => {
   if (!fileRef.value) return
@@ -113,21 +165,18 @@ const onMouseUp = () => {
 }
 
 onMounted(() => {
-  // Set initial position if provided
-  if (props.initialX !== undefined) {
-    position.value.x = props.initialX
-  }
-  if (props.initialY !== undefined) {
-    position.value.y = props.initialY
-  }
+  // Calculate initial position (handles both pixel and percentage)
+  position.value = calculatePosition()
   
   window.addEventListener('mousemove', onMouseMove)
   window.addEventListener('mouseup', onMouseUp)
+  window.addEventListener('resize', handleResize)
 })
 
 onUnmounted(() => {
   window.removeEventListener('mousemove', onMouseMove)
   window.removeEventListener('mouseup', onMouseUp)
+  window.removeEventListener('resize', handleResize)
 })
 </script>
 

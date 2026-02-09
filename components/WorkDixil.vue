@@ -8,8 +8,8 @@
     
     <ContextText
         :headline="true"
-        headline-text="Dixil Hotels & Resorts"
-        body-text="Dixil Hotels & Resorts is a hotel chain in Saudi Arabia. They are known for their unique design and their commitment to sustainability."
+        headline-text="Dixil Hotel"
+        body-text="Dixil Hotel is a 4 stars hotel in Tanger that invites its guests to live the hotel experience differently through a vibrant fusion of Pop-Art design and traditional Moroccan hospitality"
      />
 
     <!-- First Content Image -->
@@ -18,9 +18,8 @@
       image="/img/dixil_5m.webp"
     />
     <ContentImage
-      amount="2"
-      image1="/img/dixil_2m.webp"
-      image2="/img/dixil_2m.webp"
+      amount="1"
+      image="/img/dixil_2m.webp"
     />
     <ContentImage
       amount="1"
