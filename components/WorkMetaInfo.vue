@@ -15,7 +15,7 @@
         Role:
       </p>
       <p
-        class="fox-body-large-regular work-meta-info__value"
+        class="fox-label-medium-regular work-meta-info__value"
         data-node-id="394:12067"
       >
         {{ role }}
@@ -32,7 +32,7 @@
         Team:
       </p>
       <p
-        class="fox-body-large-regular work-meta-info__value"
+        class="fox-label-medium-regular work-meta-info__value"
         data-node-id="394:12073"
       >
         {{ team }}
@@ -49,7 +49,7 @@
         Timeline:
       </p>
       <p
-        class="fox-body-large-regular work-meta-info__value"
+        class="fox-label-medium-regular work-meta-info__value"
         data-node-id="394:12070"
       >
         {{ timeline }}
@@ -78,15 +78,15 @@ withDefaults(defineProps<Props>(), {
 <style scoped>
 .work-meta-info {
   display: flex;
-  gap: var(--fox-spacing-300); /* 48px gap */
-  align-items: flex-start;
+  flex-direction: column;
+  gap: var(--fox-spacing-200); /* 48px gap */
   position: relative;
   width: 100%;
 }
 
 .work-meta-info__item {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: auto 1fr;
   gap: var(--fox-spacing-100); /* 8px gap */
   align-items: flex-start;
   position: relative;
@@ -101,12 +101,14 @@ withDefaults(defineProps<Props>(), {
 }
 
 .work-meta-info__value {
-  color: var(--fox-text-highlight);
+  color: var(--fox-text-midlight);
   position: relative;
   flex-shrink: 0;
   margin: 0;
 }
 </style>
+
+
 
 
 

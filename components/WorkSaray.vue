@@ -20,7 +20,7 @@
     <ContextText
       :headline="true"
       headline-text="Observations:"
-      body-text="As the architecture conception come to an end, a need for a digital presence that reflects Saray's brand's identity and generate qualified leads was identified."
+      body-text="As the architecture conception come to an end, a need for a digital presence that reflects Saray's brand's identity and generate qualified leads was identified. That's when I was reached out to."
     />
 
     <ContentImage
