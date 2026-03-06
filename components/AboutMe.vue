@@ -6,7 +6,7 @@
     <ContextText
       class="about-me__text"
       :headline="false"
-      :body-text="'I am a Product Designer, or rather, an experimenter with 6+ years of experience in researching, hypothesizing, and testing. I solve everything from absurd to complex problems with the aim of making people\'s lives easier and better. Coming from a tech and marketing background helps me see the bigger picture, allowing me to align user empathy with business goals and engineering constraints.'"
+      :body-text="'I am a Product Designer, or rather, an experimenter with 6+ years of experience in researching, hypothesizing, and testing to solve everything from absurd to complex problems with the aim of making people\'s lives easier and better. Coming from a tech and marketing background helps me see the bigger picture, allowing me to align user empathy with business goals and engineering constraints.'"
     />
     <ContentImage
       class="about-me__image"

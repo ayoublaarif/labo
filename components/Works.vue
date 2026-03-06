@@ -26,13 +26,13 @@
     >
       <ProjectCard
         class="works__card"
-        :image-name="projects[3].imageName"
-        :headline="projects[3].headline"
-        :subheadline="projects[3].subheadline"
-        :modal-component="projects[3].modalComponent"
-        :modal-title="projects[3].modalTitle"
-        :modal-initial-x="projects[3].modalInitialX"
-        :modal-initial-y="projects[3].modalInitialY"
+        :image-name="projects[1].imageName"
+        :headline="projects[1].headline"
+        :subheadline="projects[1].subheadline"
+        :modal-component="projects[1].modalComponent"
+        :modal-title="projects[1].modalTitle"
+        :modal-initial-x="projects[1].modalInitialX"
+        :modal-initial-y="projects[1].modalInitialY"
         data-node-id="121:822"
         @open-modal="handleOpenModal"
       />
@@ -49,6 +49,20 @@
         @open-modal="handleOpenModal"
       />
     </div>
+
+
+    <ProjectCard
+      class="works__card works__card--full"
+      :image-name="projects[3].imageName"
+      :headline="projects[3].headline"
+      :subheadline="projects[3].subheadline"
+      :modal-component="projects[3].modalComponent"
+      :modal-title="projects[3].modalTitle"
+      :modal-initial-x="projects[3].modalInitialX"
+      :modal-initial-y="projects[3].modalInitialY"
+      data-node-id="121:816"
+      @open-modal="handleOpenModal"
+    />
 
     <!-- Decorative line separator
     <div class="works__separator">
@@ -112,14 +126,14 @@
         @open-modal="handleOpenModal"
       />
       <ProjectCard
-        class="Sifr works__card"
+        class="works__card"
         :image-name="projects[6].imageName"
         :headline="projects[6].headline"
         :subheadline="projects[6].subheadline"
         :modal-title="projects[6].modalTitle"
         :modal-initial-x="projects[6].modalInitialX"
         :modal-initial-y="projects[6].modalInitialY"
-        :external-link="projects[6].externalLink"
+        :modal-component="projects[6].modalComponent"
         data-node-id="121:843"
         @open-modal="handleOpenModal"
       />
@@ -143,7 +157,7 @@
         @open-modal="handleOpenModal"
       />
       <ProjectCard
-        class="Sifr works__card"
+        class="works__card"
         :image-name="projects[8].imageName"
         :headline="projects[8].headline"
         :subheadline="projects[8].subheadline"
@@ -166,6 +180,7 @@ import WorkDixil from './WorkDixil.vue'
 import WorkSaray from './WorkSaray.vue'
 import WorkCasablanca from './WorkCasablanca.vue'
 import WorkTooBigToHandle from './WorkTooBigToHandle.vue'
+import WorkInternationalOffers from './WorkInternationalOffers.vue'
     // Image asset from Figma localhost server
 const lineImage = 'http://localhost:3845/assets/411c0251516e4d899a5f90f26eec98d5bbf328af.svg'
 
@@ -214,6 +229,15 @@ const projects = [
     subheadline: 'Showcase - 2022',
     modalComponent: WorkDixil as Component,
     modalTitle: 'Dixil Hotels & Resorts',
+    modalInitialX: 480,
+    modalInitialY: 20,
+  },
+  {
+    imageName: 'io_1.webp',
+    headline: 'International Offers',
+    subheadline: 'Case study - 2025',
+    modalComponent: WorkInternationalOffers as Component,
+    modalTitle: 'International Offers',
     modalInitialX: 480,
     modalInitialY: 20,
   },
