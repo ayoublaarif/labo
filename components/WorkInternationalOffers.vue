@@ -27,7 +27,7 @@
     <WorkMetaInfo 
       role="Product Designer"
       timeline="2025"
-      team="Me, PM, SEO Lead, BI Developer, Engineer, and a Revnue Manager"
+      team="Me, PM, SEO Lead, 2 BI Developers, Engineer, and a Revnue Manager"
     />
 
     <!-- Observations -->
@@ -59,7 +59,7 @@
           class="fox-body-large-regular"
           data-node-id="I187:1204;65:164"
         >
-          <p>I dived into the different strings of the topic through talking to users to identify what positive alternative actions can be done other than the notify me CTA which data shows that very few users actually click it, because JustWatch is usually used at watching experience, so the setup is already set for a watch during that time not later, and also through talking to industry experts to understand… </p>
+          <p>I dived into the different strings of the topic through talking to users to identify what positive alternative actions can be done other than the notify me CTA which data shows that very few users actually click it, because JustWatch is usually used at the watching experience, so the setup is already set for a watch now, not later. I also consulted with industry experts to be able to describe how streaming services deal with their content limitations.</p>
           <p>&nbsp;</p>
           <p>The main insight was the concept of Geographical Licensing, basically some movies are available in certain countries and not others.</p>
           <p>&nbsp;</p>

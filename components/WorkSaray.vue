@@ -31,7 +31,7 @@
     <ContextText
     :headline="true"
     headline-text="Research:">
-      <p>I started my research with two objectives in mind, first to identify key visual elements of a real estate website, and second to build an information architecture that's easy to naviagte for potential clients to find key information</p>
+      <p>I started my research with two objectives in mind, first to identify key visual elements of a luxurious real estate company, and second to build an information architecture that's easy to naviagte for potential clients to find key information</p>
       <p>To achieve this, I initiated two methods, developers interviews to leverage their extensive experience in the field, and competitive audit to map out industry standards.</p>
     </ContextText>
 

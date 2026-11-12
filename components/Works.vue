@@ -26,13 +26,13 @@
     >
       <ProjectCard
         class="works__card"
-        :image-name="projects[1].imageName"
-        :headline="projects[1].headline"
-        :subheadline="projects[1].subheadline"
-        :modal-component="projects[1].modalComponent"
-        :modal-title="projects[1].modalTitle"
-        :modal-initial-x="projects[1].modalInitialX"
-        :modal-initial-y="projects[1].modalInitialY"
+        :image-name="projects[10].imageName"
+        :headline="projects[10].headline"
+        :subheadline="projects[10].subheadline"
+        :modal-component="projects[10].modalComponent"
+        :modal-title="projects[10].modalTitle"
+        :modal-initial-x="projects[10].modalInitialX"
+        :modal-initial-y="projects[10].modalInitialY"
         data-node-id="121:822"
         @open-modal="handleOpenModal"
       />
@@ -181,6 +181,7 @@ import WorkSaray from './WorkSaray.vue'
 import WorkCasablanca from './WorkCasablanca.vue'
 import WorkTooBigToHandle from './WorkTooBigToHandle.vue'
 import WorkInternationalOffers from './WorkInternationalOffers.vue'
+import WorkTheArtofPatterns from './WorkTheArtofPatterns.vue'
     // Image asset from Figma localhost server
 const lineImage = 'http://localhost:3845/assets/411c0251516e4d899a5f90f26eec98d5bbf328af.svg'
 
@@ -234,7 +235,7 @@ const projects = [
   },
   {
     imageName: 'io_1.webp',
-    headline: 'International Offers',
+    headline: 'International Offers - Feature Design',
     subheadline: 'Case study - 2025',
     modalComponent: WorkInternationalOffers as Component,
     modalTitle: 'International Offers',
@@ -294,6 +295,15 @@ const projects = [
     modalTitle: 'Canada Roller Team',
     externalLink: 'https://www.behance.net/gallery/107549989/Canda-Roller-Derby-Website-Redesign'
     // No initialX/initialY = will use default centered position
+  },
+  {
+    imageName: 'io_1.webp',
+    headline: 'The Art of Patterns - Case study',
+    subheadline: 'Case study - 2025',
+    modalComponent: WorkTheArtofPatterns as Component,
+    modalTitle: 'The Art of Patterns',
+    modalInitialX: 480,
+    modalInitialY: 20,
   },
   
   

@@ -26,12 +26,13 @@ interface _GlobalComponents {
     'Renard': typeof import("../components/Renard.vue")['default']
     'WorkCasablanca': typeof import("../components/WorkCasablanca.vue")['default']
     'WorkDixil': typeof import("../components/WorkDixil.vue")['default']
+    'WorkInternationalOffers': typeof import("../components/WorkInternationalOffers.vue")['default']
     'WorkJustWatch': typeof import("../components/WorkJustWatch.vue")['default']
     'WorkMetaInfo': typeof import("../components/WorkMetaInfo.vue")['default']
     'WorkSaray': typeof import("../components/WorkSaray.vue")['default']
     'WorkSifr': typeof import("../components/WorkSifr.vue")['default']
+    'WorkTheArtofPatterns': typeof import("../components/WorkTheArtofPatterns.vue")['default']
     'WorkTooBigToHandle': typeof import("../components/WorkTooBigToHandle.vue")['default']
-    'WorkinternationalOffers': typeof import("../components/WorkInternationalOffers.vue")['default']
     'Works': typeof import("../components/Works.vue")['default']
     'NuxtWelcome': typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']
     'NuxtLayout': typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
@@ -71,12 +72,13 @@ interface _GlobalComponents {
     'LazyRenard': LazyComponent<typeof import("../components/Renard.vue")['default']>
     'LazyWorkCasablanca': LazyComponent<typeof import("../components/WorkCasablanca.vue")['default']>
     'LazyWorkDixil': LazyComponent<typeof import("../components/WorkDixil.vue")['default']>
-    'LazyWorkJustWatch': LazyComponent<typeof import("../co../components/WorkinternationalOffers.vuet']>
+    'LazyWorkInternationalOffers': LazyComponent<typeof import("../components/WorkInternationalOffers.vue")['default']>
+    'LazyWorkJustWatch': LazyComponent<typeof import("../components/WorkJustWatch.vue")['default']>
     'LazyWorkMetaInfo': LazyComponent<typeof import("../components/WorkMetaInfo.vue")['default']>
     'LazyWorkSaray': LazyComponent<typeof import("../components/WorkSaray.vue")['default']>
     'LazyWorkSifr': LazyComponent<typeof import("../components/WorkSifr.vue")['default']>
+    'LazyWorkTheArtofPatterns': LazyComponent<typeof import("../components/WorkTheArtofPatterns.vue")['default']>
     'LazyWorkTooBigToHandle': LazyComponent<typeof import("../components/WorkTooBigToHandle.vue")['default']>
-    'LazyWorkinternationalOffers': LazyComponent<typeof import("../components/WorkInternationalOffers.vue")['default']>
     'LazyWorks': LazyComponent<typeof import("../components/Works.vue")['default']>
     'LazyNuxtWelcome': LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']>
     'LazyNuxtLayout': LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']>
@@ -122,12 +124,13 @@ export const ProjectCard: typeof import("../components/ProjectCard.vue")['defaul
 export const Renard: typeof import("../components/Renard.vue")['default']
 export const WorkCasablanca: typeof import("../components/WorkCasablanca.vue")['default']
 export const WorkDixil: typeof import("../components/WorkDixil.vue")['default']
-export const WorkJustWatch: typeof import("../co../components/WorkinternationalOffers.vuet']
+export const WorkInternationalOffers: typeof import("../components/WorkInternationalOffers.vue")['default']
+export const WorkJustWatch: typeof import("../components/WorkJustWatch.vue")['default']
 export const WorkMetaInfo: typeof import("../components/WorkMetaInfo.vue")['default']
 export const WorkSaray: typeof import("../components/WorkSaray.vue")['default']
 export const WorkSifr: typeof import("../components/WorkSifr.vue")['default']
+export const WorkTheArtofPatterns: typeof import("../components/WorkTheArtofPatterns.vue")['default']
 export const WorkTooBigToHandle: typeof import("../components/WorkTooBigToHandle.vue")['default']
-export const WorkinternationalOffers: typeof import("../components/WorkInternationalOffers.vue")['default']
 export const Works: typeof import("../components/Works.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']
 export const NuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
@@ -167,12 +170,13 @@ export const LazyProjectCard: LazyComponent<typeof import("../components/Project
 export const LazyRenard: LazyComponent<typeof import("../components/Renard.vue")['default']>
 export const LazyWorkCasablanca: LazyComponent<typeof import("../components/WorkCasablanca.vue")['default']>
 export const LazyWorkDixil: LazyComponent<typeof import("../components/WorkDixil.vue")['default']>
-export const LazyWorkJustWatch: LazyComponent<typeof import("../co../components/WorkinternationalOffers.vuet']>
+export const LazyWorkInternationalOffers: LazyComponent<typeof import("../components/WorkInternationalOffers.vue")['default']>
+export const LazyWorkJustWatch: LazyComponent<typeof import("../components/WorkJustWatch.vue")['default']>
 export const LazyWorkMetaInfo: LazyComponent<typeof import("../components/WorkMetaInfo.vue")['default']>
 export const LazyWorkSaray: LazyComponent<typeof import("../components/WorkSaray.vue")['default']>
 export const LazyWorkSifr: LazyComponent<typeof import("../components/WorkSifr.vue")['default']>
+export const LazyWorkTheArtofPatterns: LazyComponent<typeof import("../components/WorkTheArtofPatterns.vue")['default']>
 export const LazyWorkTooBigToHandle: LazyComponent<typeof import("../components/WorkTooBigToHandle.vue")['default']>
-export const LazyWorkinternationalOffers: LazyComponent<typeof import("../components/WorkInternationalOffers.vue")['default']>
 export const LazyWorks: LazyComponent<typeof import("../components/Works.vue")['default']>
 export const LazyNuxtWelcome: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']>
 export const LazyNuxtLayout: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']>
