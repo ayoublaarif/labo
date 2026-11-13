@@ -297,9 +297,9 @@ const projects = [
     // No initialX/initialY = will use default centered position
   },
   {
-    imageName: 'io_1.webp',
-    headline: 'The Art of Patterns - Case study',
-    subheadline: 'Case study - 2025',
+    imageName: 'taop_01.webp',
+    headline: 'The Art of Patterns - Anatomy',
+    subheadline: 'Case study - 2026',
     modalComponent: WorkTheArtofPatterns as Component,
     modalTitle: 'The Art of Patterns',
     modalInitialX: 480,

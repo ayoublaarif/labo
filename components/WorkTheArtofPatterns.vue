@@ -98,20 +98,13 @@
 
       <ContextText
         :headline="false"
-        body-text="Before we dive deeply into the recesses of the wallpaper groups, I want to give a little background about me: I was born and raised in Morocco, a place where patterns are principal aesthetic elements..."
+        body-text="Before we dive deeply into the recesses of the wallpaper groups, I want to give a little background about of how I got here: I was born and raised in Morocco, a place where patterns shape the aesthetic of spaces and objects... They are found  almost everywhere. From ground to walls, from sheets covers to clothing, from furniture to architecture, and even in the food we eat. but I've always seen them as a background element, like I don't remember talking to my friend asking, what do you think about this specific pattern on this wall."
       />
 
 
       <ContentImage
-      amount="2"
-      image1="/img/taop_5.webp"
-      image2="/img/taop_6.webp"
-    />
-
-    <ContentImage
-      amount="2"
-      image1="/img/taop_5.webp"
-      image2="/img/taop_6.webp"
+      amount="1"
+      image="/img/alhambra.jpg"
     />
 
     <ContextText

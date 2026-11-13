@@ -13,9 +13,10 @@
      />
 
     <!-- First Content Image -->
+     
     <ContentImage
       amount="1"
-      image="/img/saray_2m.webp"
+      image="/img/saray_thumbnail.webp"
     />
     <ContextText
       :headline="true"
@@ -68,6 +69,11 @@
       :headline="true"
       headline-text="Design:"
       body-text="Guided the 5th principle of my Design Personality inspired by Sister Corita Kent: 'Don’t try to create and analyze at the same time', I began with divergent exploration, generating a wide breadth of visual directions driven by a creative freedom without any judgment. I then shifted to convergent analysis, filtering these concepts against our research insights to ensure they met the strategic goals. Following a series of feedback loops with stakeholders, we refined the strongest direction to settle with this final design."
+    />
+
+    <ContentImage
+      amount="1"
+      image="/img/saray_2m.webp"
     />
 
     
