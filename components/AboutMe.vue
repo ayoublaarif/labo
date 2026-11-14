@@ -11,7 +11,7 @@
     <ContentImage
       class="about-me__image"
       amount="1"
-      :image="'/img/ayoub.webp'"
+      :image="'/img/ayoub_27.jpg'"
     />
   </div>
 </template>
@@ -28,7 +28,7 @@ interface Props {
 <style scoped>
 .about-me {
   display: flex;
-  gap: var(--fox-spacing-200); /* 32px gap */
+  gap: var(--fox-spacing-300); /* 48px gap */
   align-items: flex-start;
   position: relative;
   width: 568px;
@@ -55,10 +55,10 @@ interface Props {
 }
 
 .about-me__image :deep(.content-image__img) {
-  width: 100%;
-  height: 100%;
+  width: 128%;
+  height: 128%;
   object-fit: cover;
-  object-position: 50% 50%;
+  object-position: -32px 72%;
 }
 </style>
 
