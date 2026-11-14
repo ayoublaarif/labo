@@ -31,6 +31,7 @@ interface _GlobalComponents {
     'WorkMetaInfo': typeof import("../components/WorkMetaInfo.vue")['default']
     'WorkSaray': typeof import("../components/WorkSaray.vue")['default']
     'WorkSifr': typeof import("../components/WorkSifr.vue")['default']
+    'WorkTheArtofPatterns': typeof import("../components/WorkTheArtofPatterns.vue")['default']
     'WorkTooBigToHandle': typeof import("../components/WorkTooBigToHandle.vue")['default']
     'Works': typeof import("../components/Works.vue")['default']
     'NuxtWelcome': typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']
@@ -76,6 +77,7 @@ interface _GlobalComponents {
     'LazyWorkMetaInfo': LazyComponent<typeof import("../components/WorkMetaInfo.vue")['default']>
     'LazyWorkSaray': LazyComponent<typeof import("../components/WorkSaray.vue")['default']>
     'LazyWorkSifr': LazyComponent<typeof import("../components/WorkSifr.vue")['default']>
+    'LazyWorkTheArtofPatterns': LazyComponent<typeof import("../components/WorkTheArtofPatterns.vue")['default']>
     'LazyWorkTooBigToHandle': LazyComponent<typeof import("../components/WorkTooBigToHandle.vue")['default']>
     'LazyWorks': LazyComponent<typeof import("../components/Works.vue")['default']>
     'LazyNuxtWelcome': LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']>
@@ -127,6 +129,7 @@ export const WorkJustWatch: typeof import("../components/WorkJustWatch.vue")['de
 export const WorkMetaInfo: typeof import("../components/WorkMetaInfo.vue")['default']
 export const WorkSaray: typeof import("../components/WorkSaray.vue")['default']
 export const WorkSifr: typeof import("../components/WorkSifr.vue")['default']
+export const WorkTheArtofPatterns: typeof import("../components/WorkTheArtofPatterns.vue")['default']
 export const WorkTooBigToHandle: typeof import("../components/WorkTooBigToHandle.vue")['default']
 export const Works: typeof import("../components/Works.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']
@@ -172,6 +175,7 @@ export const LazyWorkJustWatch: LazyComponent<typeof import("../components/WorkJ
 export const LazyWorkMetaInfo: LazyComponent<typeof import("../components/WorkMetaInfo.vue")['default']>
 export const LazyWorkSaray: LazyComponent<typeof import("../components/WorkSaray.vue")['default']>
 export const LazyWorkSifr: LazyComponent<typeof import("../components/WorkSifr.vue")['default']>
+export const LazyWorkTheArtofPatterns: LazyComponent<typeof import("../components/WorkTheArtofPatterns.vue")['default']>
 export const LazyWorkTooBigToHandle: LazyComponent<typeof import("../components/WorkTooBigToHandle.vue")['default']>
 export const LazyWorks: LazyComponent<typeof import("../components/Works.vue")['default']>
 export const LazyNuxtWelcome: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']>

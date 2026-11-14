@@ -46,13 +46,13 @@
         class="fox-label-medium-regular work-meta-info__label"
         data-node-id="394:12069"
       >
-        Timeline:
+        Year:
       </p>
       <p
         class="fox-label-medium-regular work-meta-info__value"
         data-node-id="394:12070"
       >
-        {{ timeline }}
+        {{ year }}
       </p>
     </div>
     
@@ -62,7 +62,7 @@
 <script setup lang="ts">
 interface Props {
   role?: string
-  timeline?: string
+  year?: string
   team?: string
   nodeId?: string
 }

@@ -26,8 +26,8 @@
 
     <WorkMetaInfo 
       role="Product Designer"
-      timeline="2025"
-      team="Me, PM, SEO Lead, BI Developer, Engineer, and a Revnue Manager"
+      year="2025"
+      team="Me, PM, SEO Lead, 2 BI Developers, Engineer, and a Revenue Manager"
     />
 
     <!-- Observations -->
@@ -59,7 +59,7 @@
           class="fox-body-large-regular"
           data-node-id="I187:1204;65:164"
         >
-          <p>I dived into the different strings of the topic through talking to users to identify what positive alternative actions can be done other than the notify me CTA which data shows that very few users actually click it, because JustWatch is usually used at watching experience, so the setup is already set for a watch during that time not later, and also through talking to industry experts to understand… </p>
+          <p>I dived into the different strings of the topic through talking to users to identify what positive alternative actions can be done other than the notify me CTA which data shows that very few users actually click it, because JustWatch is usually used at the watching experience, so the setup is already set for a watch now, not later. I also consulted with industry experts to be able to describe how streaming services deal with their content limitations.</p>
           <p>&nbsp;</p>
           <p>The main insight was the concept of Geographical Licensing, basically some movies are available in certain countries and not others.</p>
           <p>&nbsp;</p>
@@ -128,7 +128,7 @@
    
     <ContextText
         :headline="false"
-        body-text="As the list of countries could go sometimes forever, we sorted it by the first language of the geo location of the users"
+        body-text="As the list of countries could go sometimes forever, we sorted it by the first language of the geo location of the users. Of course we also kept the information that this title is not available in the user's country."
     />
 
     <ContentImage
@@ -166,7 +166,9 @@
           class="fox-body-large-regular"
           data-node-id="I187:1214;65:164"
         >
-          <p>While the bounce rate didn't change much, the clickouts increased by 10% and the revenue increased by 300%.</p>
+          <p>The results were stunning. Along with a noticeable drop in bounce rate, the feature unlocked two brand-new, scalable revenue streams from scratch, driving high-volume clickout engagement and establishing a steady stream of CPA-based VPN conversions.
+<br>
+After wrapping up the experiment, we immediately polished the design and scaled the feature across the US and international markets. Today, what started as a zero-to-one experiment is consistently generating more than a million monthly clickout and significant recurring affiliate revenue.</p>
         </div>
       </ContextText>
     </div>

@@ -60,7 +60,9 @@ import Works from '~/components/Works.vue'
 import File from '~/components/File.vue'
 import Renard from '~/components/Renard.vue'
 import AboutMe from '~/components/AboutMe.vue'
+//import bgDali from '~/assets/img/taop_p6_2_alt.webp'
 import bgDali from '~/assets/img/bg_dali.jpg'
+
 import { scanHighestZIndex } from '~/utils/zIndexTracker'
 
 const backgroundImage = bgDali
@@ -126,11 +128,11 @@ const handleFileClick = () => {
   position: absolute;
   inset: 0;
   max-width: none;
-  mix-blend-mode: luminosity;
   object-fit: cover;
   object-position: 50% 50%;
   width: 100%;
   height: 100%;
+  opacity: 1;
 }
 
 .index-page__modal {

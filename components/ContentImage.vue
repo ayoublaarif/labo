@@ -82,7 +82,7 @@ withDefaults(defineProps<Props>(), {
   width: 100%;
   max-width: 824px;
   border-radius: var(--fox-border-radius-lg);
-  background-color: var(--fox-neutral-800);
+  /* background-color: var(--fox-neutral-800); */
 }
 
 .content-image--double {
@@ -117,6 +117,23 @@ withDefaults(defineProps<Props>(), {
 .content-image--single {
   position: relative;
   overflow: hidden;
+  background-color: var(--fox-neutral-800);
+
+}
+
+.content-image--diagram.content-image--single,
+.content-image--diagram .content-image__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 256px;
+  padding: 48px;
+}
+
+
+.content-image--diagram .content-image__img {
+  width: auto;
+  height: 100%;
 }
 </style>
 
